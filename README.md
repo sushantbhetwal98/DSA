@@ -6,3 +6,8 @@ a. O(n)
 b. O(1)
 c. O(n^2)
 d. O(log n)
+
+CHAPTER - 2
+
+_2.1 ARRAY DS_
+_2.2 Custom ARRAY DS_
