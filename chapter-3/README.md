@@ -4,7 +4,7 @@ _Linked List_
 
 A Linked List is a linear data structure where elements, called nodes, are not stored contiguously in the memory. Instead, each node contains data and a reference, ot link, to the next node in the sequence.
 
-_Custom linked list_
+_3.1 Singly Custom linked list_
 a. Push
 b. Pop
 c. Unshift
@@ -16,3 +16,5 @@ h. Set
 i. Insert
 j. Size
 k. Clear
+
+_3.2 Doubly Custom Linked List_
