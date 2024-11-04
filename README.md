@@ -11,3 +11,7 @@ CHAPTER - 2
 
 _2.1 ARRAY DS_
 _2.2 Custom ARRAY DS_
+
+CHAPTER - 3
+
+_3.1 Linked List_
