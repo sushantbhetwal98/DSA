@@ -68,7 +68,7 @@ class DoublyLinkedList {
     }
 
     let temp = this.head;
-    if (length === 1) {
+    if (this.length === 1) {
       this.head = null;
       this.tail = null;
     }
@@ -76,18 +76,18 @@ class DoublyLinkedList {
     this.head = this.head.next;
     this.head.prev = null;
     temp.next = null;
-    length--;
+    this.length--;
     return temp;
   }
 
   // get first element
   getFirst() {
-    return this.head.head;
+    return this.head.value;
   }
 
   // get last element
   getLast() {
-    return this.tail.head;
+    return this.tail.value;
   }
 
   // get element by index
@@ -120,9 +120,9 @@ class DoublyLinkedList {
   insert(index, value) {
     if (index === 0) {
       return this.unshift(value);
-    } else if (index === length) {
+    } else if (index === this.length) {
       return this.push(value);
-    } else if (index < 0 || index > length) {
+    } else if (index < 0 || index > this.length) {
       return undefined;
     } else {
       const newNode = new Node(value);
@@ -152,4 +152,17 @@ class DoublyLinkedList {
 
 let myDoublyLinkedList = new DoublyLinkedList(0);
 myDoublyLinkedList.push(1);
-console.log(myDoublyLinkedList);
+myDoublyLinkedList.push(2);
+myDoublyLinkedList.push(3);
+// console.log(myDoublyLinkedList);
+// myDoublyLinkedList.pop();
+// console.log(myDoublyLinkedList);
+// myDoublyLinkedList.shift();
+// console.log(myDoublyLinkedList.getFirst());
+// console.log(myDoublyLinkedList.getLast());
+// console.log(myDoublyLinkedList.get(2));
+// myDoublyLinkedList.set(2, 10);
+// console.log(myDoublyLinkedList.get(2));
+console.log(myDoublyLinkedList.get(3));
+myDoublyLinkedList.insert(3, 10);
+console.log(myDoublyLinkedList.get(3));

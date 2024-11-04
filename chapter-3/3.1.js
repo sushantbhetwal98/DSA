@@ -126,7 +126,7 @@ class LinkedList {
     if (index === this.length) {
       return this.push(value);
     }
-    if (index < 0 || index > length) {
+    if (index < 0 || index > this.length) {
       return undefined;
     }
 
