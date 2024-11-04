@@ -14,3 +14,8 @@ A queue is a linear data structure that functions like a waiting line. It follow
 
 a. Enqueue
 b. Dequeue
+
+_Challenges_
+a. Min Stack - to find the minimum number in the stack
+b. Valid Parenthesis
+c. Reverse String Using queue
