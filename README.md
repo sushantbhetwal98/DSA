@@ -22,3 +22,7 @@ _3.2 Doubly Linked List_
 CHAPTER - 4
 
 STACK & QUEUE
+
+CHAPTER - 5
+
+HASH TABLE
