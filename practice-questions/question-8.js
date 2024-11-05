@@ -11,6 +11,7 @@ because 2 (at index 0) plus 7 (at index 1) equals 9.
 
 // this is the ugly code we are doing right now as we are noobies and we will do this
 // in more efficient manner later
+
 const twoSum = (nums, target) => {
   // loop through each number in the lsit
   for (let i = 0; i < nums.length - 1; i++) {
@@ -28,3 +29,20 @@ const twoSum = (nums, target) => {
 
 const indexes = twoSum([2, 7, 11, 15], 26);
 console.log(indexes);
+
+// refactored code
+
+function refactoredtwoSum(nums, target) {
+  const numMap = {};
+  for (let i = 0; i < nums.length; i++) {
+    const compliment = target - nums[i];
+    if (compliment in numMap && numMap[compliment] !== i) {
+      return [numMap[compliment], i];
+    }
+    numMap[nums[i]] = i;
+  }
+  return [];
+}
+
+const refactoredIndexes = refactoredtwoSum([2, 7, 11, 15], 26);
+console.log(refactoredIndexes);
